@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div class="head-title">
+        <p>ROCK</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+      </div>
+
+      <div class="score-box">
+        <div class="score-area">
+          <p>
+            COPUTER <br />
+            SCORE
+          </p>
+          <p class="score" id="computer-score">0</p>
+        </div>
+        <div class="score-area">
+          <p>
+            YOUR <br />
+            SCORE
+          </p>
+          <p class="score" id="user-score">0</p>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <div class="play">
+        <button id="rock" class="rock btn-choice" data-choice="rock">
+          <div><img src="/images/rock.png" alt="" /></div>
+          <img src="./images/Line1.png" alt="" class="line1" />
+        </button>
+        <button id="scissor" class="scissor btn-choice" data-choice="scissor">
+          <div><img src="/images/scissor.png" alt="" /></div>
+          <img src="./images/Line2.png" alt="" class="line2" />
+        </button>
+        <button id="paper" class="paper btn-choice" data-choice="paper">
+          <div><img src="/images/paper.png" alt="" /></div>
+          <img src="./images/Line3.png" alt="" class="line3" />
+        </button>
+      </div>
+    </main>
+    <!-- main end -->
+    <div class="rulesNotice" id="rulesNotice">
+      <h2>Game Rules</h2>
+      <ul>
+        <li>
+          Rock beats scissors, scissors beat <br />
+          paper, and paper beats rock.
+        </li>
+        <li>
+          Agree ahead of time whether you’ll <br />
+          count off “rock, paper, scissors, <br />
+          shoot” or just “rock, paper, scissors.”
+        </li>
+        <li>
+          Use rock, paper, scissors to settle <br />
+          minor decisions or simply play to <br />
+          pass the time
+        </li>
+        <li>
+          If both players lay down the same<br />
+          hand, each player lays down another<br />
+          hand
+        </li>
+      </ul>
+      <div class="closeRules" id="closeRules">X</div>
+    </div>
+    <div id="losingNotice">
+      You are losing <br />
+      On the overall score <br />
+      Continue playing to win
+      <div id="closeLosingNotice">X</div>
+    </div>
+    <div class="rules" id="rules">RULES</div>
+    <a href="winner.html" class="next" id="next"> NEXT </a>
+  </body>
+  <script src="app.js"></script>
+</html>

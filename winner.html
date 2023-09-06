@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="winnerImg">
+      <img src="./images/champion.svg" alt="" />
+      <img class="torphy" src="./images/trophy.svg" alt="" />
+    </div>
+    <div class="winnerText">
+      <h2>HURRAY!!</h2>
+      <p>YOU WON THE GAME</p>
+      <a href="index.html">
+        <button>PLAY AGAIN</button>
+      </a>
+    </div>
+    <div class="rulesNotice" id="rulesNotice">
+      <h2>Game Rules</h2>
+      <ul>
+        <li>
+          Rock beats scissors, scissors beat <br />
+          paper, and paper beats rock.
+        </li>
+        <li>
+          Agree ahead of time whether you’ll <br />
+          count off “rock, paper, scissors, <br />
+          shoot” or just “rock, paper, scissors.”
+        </li>
+        <li>
+          Use rock, paper, scissors to settle <br />
+          minor decisions or simply play to <br />
+          pass the time
+        </li>
+        <li>
+          If both players lay down the same<br />
+          hand, each player lays down another<br />
+          hand
+        </li>
+      </ul>
+      <div class="closeRules" id="closeRules">X</div>
+    </div>
+    <div class="rules" id="rules">RULES</div>
+  </body>
+  <script>
+    let rules = document.getElementById("rules"); //rules button
+    let closeRules = document.getElementById("closeRules"); //close rules button
+    let rulesNotice = document.getElementById("rulesNotice"); //rules notice
+
+    // function to topen rules notice
+    const openRulesNoice = () => {
+      rulesNotice.style.visibility = "visible";
+    };
+    // fucnction to close rules notice
+    const closeRulesFunc = () => {
+      rulesNotice.style.visibility = "hidden";
+    };
+    rules.onclick = openRulesNoice;
+    closeRules.onclick = closeRulesFunc;
+  </script>
+</html>
